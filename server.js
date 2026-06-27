@@ -10,6 +10,10 @@ app.use(express.json());
 // In-memory storage
 const store = {};
 
+app.get("/", (req, res) => {
+    res.send("API is running");
+});
+
 /**
  * POST /store
  * Body:
